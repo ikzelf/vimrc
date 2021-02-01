@@ -52,6 +52,10 @@ Plug 'vim-airline/vim-airline'
 Plug 'morhetz/gruvbox'
 Plug 'neomake/neomake'
 Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-fugitive'
+Plug 'itspriddle/vim-shellcheck'
+Plug 'airblade/vim-gitgutter'
 " Initialize plugin system
 call plug#end()
 

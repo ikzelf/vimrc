@@ -21,5 +21,7 @@ Open vim as listed above and issue
 this installs the plugin into the location that is specified in the .vimrc and the default is
 ~/.vim/plugged
 
+For ":PlugInstall" to work, the autoload/vim.plug is needed.
+
 When all your paths are defaults (~/.vimrc and ~/.vim/) no changes are needed at all
 happy vimming!
