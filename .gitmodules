@@ -1,0 +1,12 @@
+[submodule ".vim/pack/airblade/start/vim-gitgutter"]
+	path = .vim/pack/airblade/start/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
+[submodule ".vim/pack/itspriddle/start/vim-shellcheck"]
+	path = .vim/pack/itspriddle/start/vim-shellcheck
+	url = https://github.com/itspriddle/vim-shellcheck
+[submodule ".vim/pack/tpope/start/vim-fugitive"]
+	path = .vim/pack/tpope/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule ".vim/pack/tpope/start/unimpaired"]
+	path = .vim/pack/tpope/start/unimpaired
+	url = https://github.com/tpope/unimpared
