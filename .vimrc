@@ -45,7 +45,7 @@ set ruler		" show the cursor position all the time
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
 " - Avoid using standard Vim directory names like 'plugin'
-call plug#begin('~/.vim/plugged')
+call plug#begin('$VIM_CONFIG_HOME/.vim/plugged')
 Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 " Plug 'WolfgangMehner/bash-support'
 Plug 'vim-airline/vim-airline'

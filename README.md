@@ -8,17 +8,18 @@ Autopairs is a nice speed-up.
 
 Oh, and I almost forgot about the auto update of the .tags file. I like it.
 
+Define VIM_CONFIG_HOME=$HOME # default
 To install this:
 first clone to a convenient location
 cd your_cloned_location
 cp -p .vimrc ~/
 cp -rp .vim ~/
 
-you can also try to use in in the cloned location:
-    vim --cmd 'let &rtp = "$PWD/.vim"' -u .vimrc  .vimrc
+you can also try to use in in the cloned or alternative location:
+    vim --cmd 'let &rtp = "$VIM_CONFIG_HOME/.vim"' -u $VIM_CONFIG_HOME/.vimrc  
 
-so, if you want to install in the cloned location, first edit the 
-call plug#begin('~/.vim/plugged')
+The vim plugin manager also uses VIM_CONFIG_HOME
+call plug#begin('$VIM_CONFIG_HOME/.vim/plugged')
 so that it points to the correct .vim/
 
 Open vim as listed above and issue 
