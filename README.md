@@ -10,7 +10,12 @@ Oh, and I almost forgot about the auto update of the .tags file. I like it.
 
 To install this:
 first clone to a convenient location
-vim --cmd 'let &rtp = "$PWD/.vim"' -u .vimrc  .vimrc
+cd your_cloned_location
+cp -p .vimrc ~/
+cp -rp .vim ~/
+
+you can also try to use in in the cloned location:
+    vim --cmd 'let &rtp = "$PWD/.vim"' -u .vimrc  .vimrc
 
 so, if you want to install in the cloned location, first edit the 
 call plug#begin('~/.vim/plugged')
