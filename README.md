@@ -7,3 +7,19 @@ The status line show git status, same for the gutter.
 Autopairs is a nice speed-up.
 
 Oh, and I almost forgot about the auto update of the .tags file. I like it.
+
+To install this:
+first clone to a convenient location
+vim --cmd 'let &rtp = "$PWD/.vim"' -u .vimrc  .vimrc
+
+so, if you want to install in the cloned location, first edit the 
+call plug#begin('~/.vim/plugged')
+so that it points to the correct .vim/
+
+Open vim as listed above and issue 
+:PlugInstall
+this installs the plugin into the location that is specified in the .vimrc and the default is
+~/.vim/plugged
+
+When all your paths are defaults (~/.vimrc and ~/.vim/) no changes are needed at all
+happy vimming!
