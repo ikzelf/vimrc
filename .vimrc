@@ -54,8 +54,9 @@ Plug 'neomake/neomake'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-fugitive'
-Plug 'itspriddle/vim-shellcheck'
+" Plug 'itspriddle/vim-shellcheck'
 Plug 'airblade/vim-gitgutter'
+Plug 'dense-analysis/ale'
 " Initialize plugin system
 call plug#end()
 
