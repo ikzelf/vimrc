@@ -1,9 +1,9 @@
 set nocompatible
 set modelines=5
-set filetype=off                  " required
+set filetype=off            " required
 " set number
 filetype plugin on
-filetype plugin indent on    " required
+filetype plugin indent on   " required
 set omnifunc=syntaxcomplete#Complete
 
 " Enable folding
@@ -11,19 +11,20 @@ set foldmethod=indent
 set foldlevel=99
 set tags=.tags
 
-set backspace=2		" allow backspacing over everything in insert mode
+set backspace=2		        " allow backspacing over everything in insert mode
 set shiftwidth=4
-set tabstop=4                " tabstop
-set wrapmargin=2                " wrap margin
-set expandtab                  " expand tabs to spaces
-set autoindent			" always set autoindenting on
-set autowrite                  " auto write
+set tabstop=4               " tabstop
+set wrapmargin=2            " wrap margin
+set expandtab               " expand tabs to spaces
+set autoindent			    " always set autoindenting on
+set autowrite               " auto write
+set colorcolumn=+1          " highlight textwidth
 silent! !git rev-parse --is-inside-work-tree >/dev/null 2>&1
 if v:shell_error == 0
-    set nobackup	  " let git handle this
+    set nobackup	        " let git handle this
 else
-    set bdir=~/vup        " backup directory
-    set backup		  " keep a backup file
+    set bdir=~/vup          " backup directory
+    set backup		        " keep a backup file
     "Make backup before overwriting the current buffer
     set writebackup
     "Meaningful backup name, ex: filename@2015-04-05.14:59
@@ -47,14 +48,12 @@ set ruler		" show the cursor position all the time
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('$VIM_CONFIG_HOME/.vim/plugged')
 Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
-" Plug 'WolfgangMehner/bash-support'
 Plug 'vim-airline/vim-airline'
 Plug 'morhetz/gruvbox'
 Plug 'neomake/neomake'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-fugitive'
-" Plug 'itspriddle/vim-shellcheck'
 Plug 'airblade/vim-gitgutter'
 Plug 'dense-analysis/ale'
 " Initialize plugin system
